@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MangoBooks</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="cabeçalho">
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao" />
+        <label for="menu" class="container__rotulo">
+          <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Categorias</li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Fantasia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ficção Científica</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Autoajuda</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Mangá</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">HQs</a>
+          </li>
+        </ul>
+        <img
+          src="img/Logo.png"
+          alt="Logo da Alurabooks"
+          class="container__imagem"
+        />
+        <h1 class="container__titulo">
+          <b class="container__titulo--negrito">Mango</b>
+          Books
+        </h1>
+      </div>
+
+      <ul class="opcoes">
+        <input type="checkbox" id="opcoes-menu" class="opcoes__botao" />
+        <label for="opcoes-menu" class="opcoes__rotulo">
+          <li class="opcoes__lista">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Fantasia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ficção Científica</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Autoajuda</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Mangá</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">HQs</a>
+          </li>
+        </ul>
+
+        <li class="opcoes__lista">
+          <a href="#" class="opcoes__link">Favoritos</a>
+        </li>
+        <li class="opcoes__lista">
+          <a href="#" class="opcoes__link">Minha Estante</a>
+        </li>
+      </ul>
+
+      <div class="container">
+        <a href="#"
+          ><img
+            src="img/Favoritos.svg"
+            alt="Meus favoritos"
+            class="container__imagem estante"
+        /></a>
+        <a href="#" class="container__link"
+          ><img
+            src="img/Compras.svg"
+            alt="Carrinhos de compras"
+            class="container__imagem"
+          />
+          <p class="container__texto">Minha Sacola</p></a
+        >
+        <a href="#" class="container__link"
+          ><img
+            src="img/Usuario.svg"
+            alt="Meu perfil"
+            class="container__imagem"
+          />
+          <p class="container__texto">Meu Perfil</p></a
+        >
+      </div>
+    </header>
+
+    <section class="banner">
+      <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+      <p class="banner__texto">Encontre em nossa estante o que você precisa!</p>
+      <input
+        type="search"
+        class="banner__pesquisa"
+        placeholder="Qual será sua próxima leitura?"
+      />
+    </section>
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Novos lançamentos</h2>
+      <!-- Slider main container -->
+      <div class="carossel__novo">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="img/livros/1 - Harry Potter.png"
+                alt="Capa do livro Harry Potter e a pedra filosofal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/livros/2 - Viagem ao Centro da Terra.png"
+                alt="Capa do livro: Viagem ao centro da Terra"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/livros/3 - One Piece 100.png"
+                alt="One Piece volume 100"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/livros/4 - Percy Jackson.png"
+                alt="Percy Jackson e o ladrão de raios"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/livros/5 - Senhor dos Aneis.png"
+                alt="Senhor dos anéis: A sociedade do anel"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/livros/8 - Luz dos Jedi.png"
+                alt="Star Wars: Luz dos Jedi"
+              />
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+          <!-- 1º linha -->
+          <div class="card__descrição">
+            <!-- 1º coluna -->
+            <div class="descrição">
+              <h3 class="descrição__titulo">
+                Talvez você também se interesse por...
+              </h3>
+              <h2 class="descrição__titulo-livro">Caixa Misteriosa</h2>
+              <p class="descrição__texto">
+                Esse é o nosso programa de assinatura! Por um preço único, te
+                enviaremos todos os mês um de nossos títulos!
+              </p>
+            </div>
+            <!-- 2º coluna -->
+            <img src="img/Caixa misteriosa.png" class="descrição__imagem" />
+          </div>
+          <!-- 2º linha -->
+          <div class="card__botões">
+            <!-- 1º coluna -->
+            <ul class="botões">
+              <li class="botões__item">
+                <img src="img/Favoritos.svg" alt="Favoritar livro" />
+              </li>
+              <li class="botões__item">
+                <img
+                  src="img/Compras.svg"
+                  alt="Adicionar no carrinho de compras"
+                />
+              </li>
+            </ul>
+            <!-- 2º coluna -->
+            <a href="#" class="botões__ancora">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Mais Vendidos</h2>
+      <!-- Slider main container -->
+      <div class="carossel__novo">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/livros/7 - Hobbit.png" alt="O Hobbit" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/livros/9 - O poder do Subconciente.png"
+                alt="O poder do Subconsciente"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/livros/6 - Vagabond.png" alt="Vagabond" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/livros/2 - Viagem ao Centro da Terra.png"
+                alt="Viagem ao Centro da Terra"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/livros/3 - One Piece 100.png" alt="One Piece 100" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/livros/1 - Harry Potter.png"
+                alt="Harry Potter e a pedra filosofal"
+              />
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="card">
+          <!-- 1º linha -->
+          <div class="card__descrição">
+            <!-- 1º coluna -->
+            <div class="descrição">
+              <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas" />
+              <h3 class="descrição__titulo">Autor do Mês</h3>
+              <h2 class="descrição__titulo-livro">Eiichiro Oda</h2>
+              <p class="descrição__texto">
+                Eiichiro Oda é um mangaká japonês, sendo mais conhecido como
+                criador da série One Piece. One Piece é o Mangá mais vendido de
+                todo o mundo.
+              </p>
+            </div>
+            <!-- 2º coluna -->
+            <img src="img/Eiichiro Oda.png" class="descrição__imagem" />
+          </div>
+          <!-- 2º linha -->
+          <div class="card__botões">
+            <!-- 1º coluna -->
+            <ul class="botões">
+              <li class="botões__item">
+                <img src="img/Favoritos.svg" alt="Favoritar livro" />
+              </li>
+              <li class="botões__item">
+                <img
+                  src="img/Compras.svg"
+                  alt="Adicionar no carrinho de compras"
+                />
+              </li>
+            </ul>
+            <!-- 2º coluna -->
+            <a href="#" class="botões__ancora">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tópicos">
+      <h2 class="tópicos__titulo">GÊNEROS MAIS POPULARES</h2>
+      <ul class="tópicos__lista">
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Ficção Científica</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Fantasia</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Terror</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Mangá</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">HQs</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Aventura</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Romance</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Autoajuda</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contato">
+      <div class="contato__descricao">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">
+          Atualizações de e-books, novos livros, promoções e outros.
+        </p>
+      </div>
+      <input
+        type="email"
+        placeholder="Cadastre seu e-mail"
+        class="contato__email"
+      />
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+      <h2 class="rodapé__titulo">Grupo Mango</h2>
+
+      <ul class="lista-rodape">
+        <li class="lista-rodape-titulo">Educação</li>
+        <li class="lista-rodape-item">
+          <img src="img/manga.png" alt="" />
+          <a href="#" class="lista-rodape-link">Mango Info</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 2.png" alt="" />
+          <a href="#" class="lista-rodape-link">Mango News</a>
+        </li>
+      </ul>
+
+      <ul class="lista-rodape">
+        <li class="lista-rodape-titulo">Educação Online</li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 3.png" alt="" />
+          <a href="#" class="lista-rodape-link">Mango Línguas</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 2.png" alt="" />
+          <a href="#" class="lista-rodape-link">MangoJobs</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 2.png" alt="" />
+          <a href="#" class="lista-rodape-link">Mango Cursos</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga.png" alt="" />
+          <a href="#" class="lista-rodape-link">Mango Start</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 3.png" alt="" />
+          <a href="#" class="lista-rodape-link">Mango Music</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 3.png" alt="" />
+          <a href="#" class="lista-rodape-link">Mango Calendar</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga.png" alt="" />
+          <a href="#" class="lista-rodape-link">Mango Brasil</a>
+        </li>
+      </ul>
+
+      <ul class="lista-rodape">
+        <li class="lista-rodape-titulo">Comunidade</li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 2.png" alt="" />
+          <a href="#" class="lista-rodape-link">Ponto Mango</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 3.png" alt="" />
+          <a href="#" class="lista-rodape-link">MangoCast</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga.png" alt="" />
+          <a href="#" class="lista-rodape-link">Mango Tech</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 3.png" alt="" />
+          <a href="#" class="lista-rodape-link">Like a Mango</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 2.png" alt="" />
+          <a href="#" class="lista-rodape-link">Carreira sem Fronteira</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga 3.png" alt="" />
+          <a href="#" class="lista-rodape-link">BPB</a>
+        </li>
+        <li class="lista-rodape-item">
+          <img src="img/manga.png" alt="" />
+          <a href="#" class="lista-rodape-link">MangoCast BR</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+      });
+    </script>
+  </body>
+</html>
