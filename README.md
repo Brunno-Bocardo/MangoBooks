@@ -15,7 +15,7 @@
 <h2>Acesse Agora!</h2>
 <p><a href="https://brunno-bocardo.github.io/MangoBooks/" target="_blank">Clique aqui</a> para acessar</p>
 
-<h3>Tecnologias utilizadas</h3>
+<h2>Tecnologias utilizadas</h2>
 <div style="display: inline_block">
   <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
